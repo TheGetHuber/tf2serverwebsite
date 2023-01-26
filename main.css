@@ -2,6 +2,8 @@ body{
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    font-family: Oxygen;
+    background: url(https://pbs.twimg.com/media/EcaDAP2WsAYxSiE?format=jpg&name=large);
 }
 .pagetitle{
     position: absolute;
@@ -19,8 +21,9 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 100px;
-    backdrop-filter: blur(3px);
+    height: 50px;
+    backdrop-filter: blur(5px);
+    padding: 2em;
 }
 .buttons {
     user-select: none;
@@ -36,5 +39,13 @@ footer{
     margin: 0 auto;
 }
 .buttons div:hover{
-    background: wheat;
+    background: #f5deb3aa;
+    font-weight: bold;
+}
+.buttons div:active{
+    background: #ddcaa6aa; 
+}
+@font-face {
+    font-family: Oxygen;
+    src: url(source/fonts/Oxygen-Regular.ttf);
 }
