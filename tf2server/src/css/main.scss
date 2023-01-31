@@ -1,0 +1,119 @@
+@import "vars.scss";
+
+body{
+    overflow-x: hidden;
+    font-family: TF2Secondary;
+    font-size: large;
+    background: url(https://wiki.teamfortress.com/w/images/thumb/6/6f/Badwater_3.jpg/1280px-Badwater_3.jpg) fixed;
+    background-size: 100%;
+    background-position: 0% 10%;
+}
+
+.toolbar{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin: -8px;
+    position: absolute;
+    z-index: 9;
+    width: 100vw;
+    height: 60px;
+    background-color: $maincolor;
+}
+.icon{
+    width: 3%;
+}
+.icon img{
+    margin: 5px auto;
+    width: 52px;
+    height: 52px;
+}
+.buttonslayout{
+    display: flex;
+    flex-direction: row;
+    width: 48%;
+    height: 100%;
+    margin-left: 1%;
+}
+.buttonslayout div{
+    width: 150px;
+    height: 100%;
+    text-align: center;
+    background: aqua;
+    margin-right: 10px;
+}
+.buttonslayout div *{
+    margin-top: 22px;
+}
+.wordoftheday{
+    width: 39%;
+    background-color: brown;
+}
+.userlogin{
+    width: 12%;
+    background-color: blueviolet;
+}
+
+.content{
+    margin: -8px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    margin: -8px auto;
+}
+.serverchooser{
+    color: white;
+    background: $serverchoose-bg;
+    box-shadow: 0px 0px 8px 10px $serverchoose-bg;
+    margin: 23% auto;
+    height: 50%;
+    width: 60%;
+}
+.serverchooser *{
+    margin: 0 auto;
+    width: fit-content;
+}
+.servers{
+    user-select: none;
+    margin-top: 20px;
+}
+.servers thead,.servers  tbody{
+    display: flex;
+    flex-direction: row;
+}
+.servers tr{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.servers td{
+    transition: 0.2s;
+    width: 130px;
+    height: 130px;
+}
+.servers td:hover{
+    transition: 0.1s;
+    background: $serverchoose-select;
+    box-shadow: 0px 0px 6px 8px $serverchoose-select;
+    width: 140px;
+    height: 140px;
+}
+.servers td:active{
+    background: $serverchoose-active;
+    box-shadow: 0px 0px 6px 8px $serverchoose-active;
+}
+.servers  tbody{
+    margin-top: 30px;
+}
+.servericon img{
+    width: 100px;
+}
+
+@font-face {
+    font-family: TF2Build;
+    src: url(tf2build.ttf);
+}
+@font-face {
+    font-family: TF2Secondary;
+    src: url(tf2secondary.ttf);
+}
